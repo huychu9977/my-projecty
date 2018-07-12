@@ -1,0 +1,5 @@
+com\viking\bo\StudentBO.class
+com\viking\reponsitory\StudentReponsitory.class
+com\viking\application\StudentApplication.class
+com\viking\restcontroller\StudentController.class
+com\viking\service\StudentService.class

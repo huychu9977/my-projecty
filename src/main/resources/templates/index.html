@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</meta>
+<title>Student</title>
+<link rel="stylesheet" type="text/css"
+	href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
+</link>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"></link>
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/1.10.19/css/dataTables.material.min.css"></link>
+<link rel="stylesheet" type="text/css"
+	href="http://demo.geekslabs.com/materialize-v1.0/js/plugins/sweetalert/sweetalert.css"></link>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet"></link>
+<style type="text/css">
+#example_length {
+	display: none;
+}
+#example_filter input{
+	width: unset;
+}
+#example_filter label {
+    font-size: 1rem;
+    color: black;
+}
+.input-field div.error {
+	position: relative;
+	top: 0rem;
+	left: 0rem;
+	font-size: 0.8rem;
+	color: #FF4081;
+	-webkit-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	-o-transform: translateY(0%);
+	transform: translateY(0%);
+}
+</style>
+</head>
+<body>
+	<button data-target="modal1" style="margin-right: 5px;"
+		class="waves-effect waves-light btn modal-trigger btn-small add">
+		<i class="material-icons ">border_color</i>
+	</button>
+	<table id="example" class="mdl-data-table" style="width: 100%">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Phone</th>
+				<th>Address</th>
+				<th>Birthday</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+	</table>
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h2>Information</h2>
+			<div class="row">
+				<form class="formValidate" id="formValidate" novalidate="novalidate" autocomplete="off">
+					<div class="row">
+						<div class="row" id="id">
+							<div class="input-field col s12">
+								<input disabled="disabled" value="" id="disabled" type="text"
+									name="id" class="validate"> </input><label for="disabled">ID</label>
+							</div>
+						</div>
+						<div class="input-field col s12">
+							<label for="name">Full Name*</label> <input id="name" name="name"
+								type="text" data-error=".errorTxt1"></input>
+							<div class="errorTxt1"></div>
+						</div>
+
+						<div class="input-field col s12">
+							<label for="phone">Phone Number*</label> <input id="phone"
+								name="phone" type="text" data-error=".errorTxt2"></input>
+							<div class="errorTxt2"></div>
+						</div>
+						<div class="input-field col s12">
+							<label for="address">Address*</label> <input id="address"
+								name="address" type="text" data-error=".errorTxt3"></input>
+							<div class="errorTxt3"></div>
+						</div>
+						<div class="input-field col s12">
+							<label for="birthday">Birthday*</label> <input id="birthday"
+								name="birthday" type="text" data-error=".errorTxt4"></input>
+							<div class="errorTxt4"></div>
+						</div>
+
+						<div class="input-field col s12">
+							<button class="btn waves-effect waves-light right submit"
+								type="submit" name="action">
+								Submit <i class="mdi-content-send right"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.19/js/dataTables.material.min.js"></script>
+<script type="text/javascript"
+	src="http://demo.geekslabs.com/materialize-v1.0/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script type="text/javascript"
+	src="http://demo.geekslabs.com/materialize-v1.0/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+<script type="text/javascript"
+	src="http://demo.geekslabs.com/materialize-v1.0/js/plugins/jquery-validation/additional-methods.min.js"></script>
+<script type="text/javascript" src="../static/js/style.js"
+	th:src="@{js/style.js}"></script>
+
+</html>
